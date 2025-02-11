@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    font-size: 1.6rem;
+    width: inherit;
+    height: inherit;
+}
+
+.Container {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas:
+        "Header Header Header Header"
+        "Header Header Header Header"
+        "Sidebar Main Main Main"
+        "Sidebar Main Main Main"
+        "Sidebar Main Main Main"
+    ;
+    gap: 20px;
+    padding: 10px;
+}
+
+.--Border-r {
+    border-radius: 20px;
+}
+
+.--Box-shadow {
+    box-shadow: -7px 7px 14px #9d9d9d, 7px -7px 14px #ffffff;
+}
+
+.Header {
+    grid-area: Header;
+    background-color: #E13772;
+}
+
+.Sidebar {
+    grid-area: Sidebar;
+    background-color: #E0D236;
+}
+
+.Main {
+    grid-area: Main;
+    background-color: #36BEE0;
+}
