@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "Montserrat", serif;
+    background-color: #DBB4C0;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+:root {
+    --Backgr_creamy: #DBB4C0;
+    --Main_green: #58875D;
+    --Secondary_green: #A6FFAF;
+    --Mexican_pink: #FF7AA4;
+    --txt_sm: 12px;
+    --txt_md: 16px;
+    --txt_bg: 20px;
+    --txt_xl: 24px;
+}
+
+.Container {
+    display: flex;
+    justify-content: space-between;
+    width: 425px;
+    height: 100%;
+}
+
+.Container .Aside-navbar {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    width: 16%;
+    font-size: var(--txt_md);
+    background-color: var(--Main_green);
+    border-radius: 20px 0 0 20px;
+    writing-mode: sideways-lr;
+}
+
+.Aside-navbar__items {
+    display: flex;
+    justify-content: space-evenly;
+    height: 100vh;
+    list-style: none;
+}
+
+.Navbar__item {
+    text-decoration: none;
+}
