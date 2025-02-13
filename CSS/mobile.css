@@ -17,12 +17,30 @@ body {
 :root {
     --Backgr_creamy: #DBB4C0;
     --Main_green: #58875D;
-    --Secondary_green: #A6FFAF;
+    --Secondary_green: #B4DCB8;
+    --Terciary_green: #A6FFAF;
     --Mexican_pink: #FF7AA4;
-    --txt_sm: 12px;
-    --txt_md: 16px;
-    --txt_bg: 20px;
-    --txt_xl: 24px;
+    --Font-Mont: font-family: "Montserrat", serif;
+    --Txt_sm: 12px;
+    --Txt_md: 16px;
+    --Txt_bg: 20px;
+    --Txt_xl: 24px;
+}
+
+.--Box-shadow {
+    box-shadow: 3px 15px 25px;
+}
+
+.--Txt-sm {
+    font-size: var(--Txt_sm);
+}
+
+.--Txt-md {
+    font-size: var(--Txt_md);
+}
+
+.--Txt-bg {
+    font-size: var(--Txt_bg);
 }
 
 .Container {
@@ -30,6 +48,50 @@ body {
     justify-content: space-between;
     width: 425px;
     height: 100%;
+}
+
+.Header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-content: center;
+    width: 100%;
+    height: 10%;
+}
+
+.Header__saludos-container {
+    place-content: center;
+    text-align: center;
+}
+
+.Header__saludo {
+    padding-left: 30px;
+}
+
+.Header__buscar {
+    padding: 1.2rem;
+    height: 6rem;
+}
+
+.Header__placeholder {
+    width: 80%;
+    height: 4rem;
+    margin-left: 15px;
+    padding: 8px;
+    font-family: var(--Font-Mont);
+    font-size: var(--txt_md);
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 6px 20px;
+    background-color: #B4DCB8;
+}
+
+.search-form button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 5px;
 }
 
 .Container .Aside-navbar {
@@ -41,6 +103,7 @@ body {
     background-color: var(--Main_green);
     border-radius: 20px 0 0 20px;
     writing-mode: sideways-lr;
+    flex-shrink: 0;
 }
 
 .Aside-navbar__items {
