@@ -5,14 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clásicos</title>
-    <link rel="stylesheet" href="./CSS/main.css">
+    <link rel="stylesheet" href="./CSS/mobile.css">
+    <link rel="stylesheet" href="./CSS/tablet.css" media="screen and (min-width: 600px)">
+    <link rel="stylesheet" href="./CSS/desktop.css" media="screen and (min-width: 800px)">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <section class="Container">
-        <header class="Header --Border-r --Box-shadow"></header>
-        <main class="Main --Border-r --Box-shadow"></main>
-        <aside class="Sidebar --Border-r --Box-shadow"></aside>
+        <main class="Container__Main-section">
+            <header class="Header">
+                <div class="Header__saludos-container">
+                    <p class="Header__saludo --Txt-sm">Saludos!</p>
+                    <h1 class="--Txt-bg">Terrícola</h1>
+                </div>
+                <form class="Header__buscar" role="search">
+                    <label class="Header__label" for="search-input"></label>
+                    <input class="Header__placeholder" type="search" id="search-input" placeholder="Buscar...">
+                </form>
+            </header>
+        </main>
+        <nav class="Aside-navbar --Box-shadow">
+            <ul class="Aside-navbar__items">
+                <li class="Navbar__item">Home</li>
+                <li class="Navbar__item">Products</li>
+                <li class="Navbar__item">Collectibles</li>
+                <li class="Navbar__item">Ranked</li>
+                <li class="Navbar__item">Settings</li>
+            </ul>
+        </nav>
     </section>
 
 </body>
