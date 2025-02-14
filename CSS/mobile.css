@@ -28,7 +28,7 @@ body {
 }
 
 .--Box-shadow {
-    box-shadow: 3px 15px 25px;
+    box-shadow: 3px 15px 25px #000;
 }
 
 .--Txt-sm {
@@ -43,11 +43,20 @@ body {
     font-size: var(--Txt_bg);
 }
 
+.__Card-desing {}
+
 .Container {
     display: flex;
     justify-content: space-between;
     width: 425px;
     height: 100%;
+}
+
+.Container__Main-section {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
 }
 
 .Header {
@@ -56,6 +65,7 @@ body {
     place-content: center;
     width: 100%;
     height: 10%;
+    margin-top: 20px;
 }
 
 .Header__saludos-container {
@@ -65,6 +75,11 @@ body {
 
 .Header__saludo {
     padding-left: 30px;
+    font-weight: 500;
+}
+
+.Header__Usuario {
+    font-weight: bold;
 }
 
 .Header__buscar {
@@ -79,12 +94,15 @@ body {
     padding: 8px;
     font-family: var(--Font-Mont);
     font-size: var(--txt_md);
+
     outline: none;
     border: none;
     border-radius: 5px;
-    box-shadow: 2px 6px 20px;
+    box-shadow: 1px 2px 5px;
     background-color: #B4DCB8;
 }
+
+/* Product section */
 
 .search-form button {
     background: none;
@@ -96,13 +114,14 @@ body {
 
 .Container .Aside-navbar {
     display: flex;
-    height: 100vh;
     align-items: center;
+    height: 100vh;
     width: 16%;
     font-size: var(--txt_md);
-    background-color: var(--Main_green);
-    border-radius: 20px 0 0 20px;
+    color: white;
     writing-mode: sideways-lr;
+    border-radius: 20px 0 0 20px;
+    background-color: var(--Main_green);
     flex-shrink: 0;
 }
 
