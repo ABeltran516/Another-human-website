@@ -43,18 +43,23 @@ body {
     font-size: var(--Txt_bg);
 }
 
-.__Card-desing {}
+.__Card-desing {
+    display: flex;
+
+}
 
 .Container {
     display: flex;
     justify-content: space-between;
     width: 425px;
-    height: 100%;
+    height: 100vh;
 }
 
 .Container__Main-section {
     display: flex;
     width: 100%;
+    max-width: calc(100% - 16%);
+    overflow-x: hidden;
     height: 100vh;
     flex-direction: column;
 }
@@ -103,6 +108,37 @@ body {
 }
 
 /* Product section */
+
+.Product__section {
+    display: flex;
+    flex-direction: row;
+    /* Asegura que los elementos se alineen en fila */
+    gap: 5px;
+
+    width: 100%;
+    /* Ocupa todo el ancho del contenedor padre */
+    height: 25rem;
+    /* Ajusta según necesidad */
+
+    overflow-x: auto;
+    /* Permite desplazamiento horizontal */
+    overflow-y: hidden;
+    /* Evita el desplazamiento vertical */
+
+    scroll-snap-type: x mandatory;
+    /* Hace que el scroll sea más fluido */
+    white-space: nowrap;
+    /* Evita que los elementos bajen a una nueva línea */
+}
+
+.Product__card {
+    flex: 0 0 auto;
+    width: 20rem;
+    height: 25rem;
+    background-color: var(--Main_green);
+    scroll-snap-align: center;
+}
+
 
 .search-form button {
     background: none;
