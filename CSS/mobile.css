@@ -4,6 +4,11 @@
     padding: 0;
 }
 
+html,
+body {
+    overflow-x: hidden;
+}
+
 html {
     font-size: 62.5%;
     font-family: "Montserrat", serif;
@@ -45,7 +50,6 @@ body {
 
 .__Card-desing {
     display: flex;
-
 }
 
 .Container {
@@ -57,7 +61,7 @@ body {
 
 .Container__Main-section {
     display: flex;
-    width: 100%;
+    width: 84%;
     max-width: calc(100% - 16%);
     overflow-x: hidden;
     height: 100vh;
@@ -113,18 +117,16 @@ body {
     display: flex;
     flex-direction: row;
     /* Asegura que los elementos se alineen en fila */
-    gap: 5px;
-
-    width: 100%;
+    width: auto;
+    padding: 0 5rem;
+    gap: 3rem;
     /* Ocupa todo el ancho del contenedor padre */
     height: 25rem;
     /* Ajusta según necesidad */
-
     overflow-x: auto;
     /* Permite desplazamiento horizontal */
     overflow-y: hidden;
     /* Evita el desplazamiento vertical */
-
     scroll-snap-type: x mandatory;
     /* Hace que el scroll sea más fluido */
     white-space: nowrap;
@@ -136,6 +138,7 @@ body {
     width: 20rem;
     height: 25rem;
     background-color: var(--Main_green);
+    border-radius: 20px;
     scroll-snap-align: center;
 }
 
@@ -150,8 +153,10 @@ body {
 
 .Container .Aside-navbar {
     display: flex;
+    position: fixed;
+    right: 0;
     align-items: center;
-    height: 100vh;
+    height: 100%;
     width: 16%;
     font-size: var(--txt_md);
     color: white;
